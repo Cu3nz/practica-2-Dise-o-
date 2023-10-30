@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="img/png"
+      href="https://www.iesalandalus.org/planDeCentro/ProyectoEducativo/logo-ies2.png"
+    />
+    <meta name="keywords" content="Modificar,palabras,clave" />
+    <!--//!Palabras clave-->
+    <meta
+      name="Description"
+      content="Pagina web con la informacion de las paginas oficiales de valorant"
+    />
+    <meta name="Author" content="Sergio Gallegos Guerrero" />
+    <title>HTML5yCSS3_Practica01a.html Sergio Gallegos Guerrero</title>
+    <link rel="stylesheet" href="css/Ejercicio2.css" />
+  </head>
+  <body>
+    <!--Sergio Gallegos Guerrero-->
+
+    <header>
+      <!--Todo lo que necesitamos meter en la cabecera y que necesite los buscadores se recomienda poner un h1-->
+     <a href="HTML5yCSS3_Practica02a.html">
+        <img
+        src="img/logo insti.jpeg"
+        width="5%"
+        alt="logo del instituto IES.AL-ANDALUS"
+      />
+     </a>
+      <nav>
+        <a href="../paginas/principal.php" class="activo">Inicio</a>
+        <a href="../categorias/programas_TV.php">Ir a la pagina 2</a>
+        <a href="../categorias/categoria_peliculas.php">Ir a la pagina 3</a>
+        <a href="#">Ir a la pagina 4</a>
+        <a href="#">Ir a la pagina 5</a>
+      </nav>
+      <!--! Parte de navegacion-->
+    </header>
+
+    <main>
+      
+        
+
+      <aside id="lado_izquierdo"> <!--//todo Lado izquierdo de la pagina para los audios-->
+
+        <h2>Audios</h2>
+
+
+
+      </aside>
+
+      <aside id="lado_derecho">
+        <h2>Videos</h2>
+
+        <h3>Primer video:</h3>
+        <video playsinline id="video1" controls autoplay  muted>
+             <source src="video/mario_video.mp4" type="video/mp4"> 
+            <source  src="video/mario_video.webm" type="video/webm"> 
+            <source  src="video/mario_video.avi" type="video/avi">
+            Tu navegador no admite la etiqueta de video.
+        </video>
+
+        <br>
+        <span>
+            Opciones de reproducción:
+            <ul>
+                <li>MP4</li>
+                <li>webm</li>
+                <li>AVI</li>
+            </ul>
+            
+            
+        </span>
+
+        <p>He seleccionado el atributo <b>"controls"</b>, que considero esencial. Sin él, aunque el video cargue, no proporciona al usuario la interacción necesaria para reproducirlo. Este atributo permite al usuario manipular diversas funciones, como ajustar el volumen, pausar, iniciar la reproducción y visualizar en modo de pantalla completa. Es relevante señalar que la presentación y funcionalidad de estos controles pueden variar dependiendo del navegador y de su compilador interno.</p>
+
+
+        <p>Tambie he elegido el atributo <b>"autoplay"</b> para que nada mas cargar la página el video se reproduzca y junto al atributo autoplay he elegido el <b>muted</b> ya que, la reproducción automática de videos con sonido ha sido restringida en muchos navegadores, incluido Chrome, para mejorar la experiencia del usuario y prevenir comportamientos no deseados en sitios web, pero si el video esta en silenciado con el atributo "muted" la reproducción automatica esta permitida</p>
+        
+
+        <h3>Segundo video</h3>
+
+        <video poster="img/sa.jpeg" width="320" height="240" controls >
+            <source src="video/Monstruos, S.A. 3D - Trailer en español HD.mp4" type="video/mp4">
+        </video>
+        <br>
+        <span>
+            Opciones de reproducción:
+            <ul>
+                <li>MP4</li>
+                <li>webm</li>
+                <li>AVI</li>
+            </ul>
+            
+        </span>
+
+        <p>He elegido el atributo <strong>controls</strong> que considero esencial. Sin él, aunque el video cargue, no proporciona al usuario la interacción necesaria para reproducirlo. Este atributo permite al usuario manipular diversas funciones, como ajustar el volumen, pausar, iniciar la reproducción y visualizar en modo de pantalla completa. Es relevante señalar que la presentación y funcionalidad de estos controles pueden variar dependiendo del navegador y de su compilador interno. </p>
+
+        <p>Tambien he elegido el atributo <strong>poster</strong> para que muestre una imagen, como si fuera la miniatura en youtube</p>
+
+      </aside>
+    </main>
+
+    <aside id="footer">
+      <footer>
+        <address>
+          <p>Sergio Gallegos Guerrero</p>
+          <p>2ºDAW - DIW</p>
+          <p>Nombre de la practica</p>
+          <p></p>
+        </address>
+      </footer>
+      <!--Poner copyright etc, es nuestro caso poner nuestro datos-->
+    </aside>
+
+    
+  </body>
+</html>

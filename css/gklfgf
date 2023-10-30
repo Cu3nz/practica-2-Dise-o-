@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproducción de Multimedia</title>
+</head>
+<body>
+
+    <!-- Zona Principal -->
+    <main>
+        <section id="audio-section">
+            <h2>Sección de Audios</h2>
+
+            <!-- Primer Audio -->
+            <article>
+                <audio controls>
+                    <source src="path/to/audio1.mp3" type="audio/mp3">
+                    <source src="path/to/audio1.ogg" type="audio/ogg">
+                    Tu navegador no admite la etiqueta de audio.
+                </audio>
+                <p>He seleccionado el atributo <b>"controls"</b> para que el usuario tenga interacción con el audio.</p>
+            </article>
+
+            <!-- Segundo Audio -->
+            <article>
+                <audio controls>
+                    <source src="path/to/audio2.mp3" type="audio/mp3">
+                    <source src="path/to/audio2.ogg" type="audio/ogg">
+                    Tu navegador no admite la etiqueta de audio.
+                </audio>
+                <p>He seleccionado el atributo <b>"controls"</b> para que el usuario tenga interacción con el audio.</p>
+            </article>
+        </section>
+
+        <section id="video-section">
+            <h2>Sección de Videos</h2>
+
+            <!-- Primer Video -->
+            <article>
+                <video controls>
+                    <source src="path/to/video1.mp4" type="video/mp4">
+                    <source src="path/to/video1.webm" type="video/webm">
+                    Tu navegador no admite la etiqueta de video.
+                </video>
+                <p>He seleccionado el atributo <b>"controls"</b> para que el usuario tenga interacción con el video.</p>
+            </article>
+
+            <!-- Segundo Video -->
+            <article>
+                <video controls>
+                    <source src="path/to/video2.mp4" type="video/mp4">
+                    <source src="path/to/video2.webm" type="video/webm">
+                    Tu navegador no admite la etiqueta de video.
+                </video>
+                <p>He seleccionado el atributo <b>"controls"</b> para que el usuario tenga interacción con el video.</p>
+            </article>
+
+            <!-- Video de YouTube -->
+            <article>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CODIGO_DEL_VIDEO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>He utilizado un iframe para incrustar el video de YouTube directamente en la página.</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Zona Posterior -->
+    <footer>
+        <iframe src="HTML5yCSS3_Practica01a.html" width="100%" height="500"></iframe>
+        <p>Esta es la página web "HTML5yCSS3_Practica01a.html" incrustada en un iframe.</p>
+    </footer>
+
+</body>
+</html>

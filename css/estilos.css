@@ -1,0 +1,91 @@
+#cabecera{
+    text-transform: uppercase;
+}
+
+#formulario_1{
+    background-color: red;
+}
+
+legend{
+    border: 2px solid;
+    background-color: #fff;
+    
+}
+
+fieldset{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#formulario_1 input{
+    width: 200px;
+}
+
+select{
+    width: 150px;
+}
+
+#formulario_1 #direccion{
+    width: 300px;
+}
+
+#codigo_postal{
+    width: 80px;
+}
+
+
+#formulario_2{
+    background-color: orange ;
+}
+
+#formulario_2 #opcionesDirecto{
+    margin-left: 40px;
+}
+
+.opc3,.opc4{
+    width: 400px;
+}
+
+.opc5{
+    width: 660px;
+}
+
+
+#prueba_libre{
+    margin-left: 40px;
+}
+
+#formulario_3{
+    background-color: rgb(3, 60, 158);
+}
+
+#formulario_3 input{
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+#btnEnviar{
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 35px;
+    width: 120px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#btnEnviar:hover{
+    background-color: green;
+    transform: scale(1.05);
+}
+
+#btnEnviar span{
+position: relative;
+top: -6px;
+}
+
+
+
+
+
+

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="img/png" href="https://www.iesalandalus.org/planDeCentro/ProyectoEducativo/logo-ies2.png" />
+    <meta name="keywords" content="Modificar,palabras,clave"> <!--//!Palabras clave-->
+    <meta name="Description" content="Pagina web con la informacion de las paginas oficiales de valorant">
+    <meta name="Author" content="Sergio Gallegos Guerrero">
+    <title>HTML5yCSS3_Practica01a.html Sergio Gallegos Guerrero</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    
+    
+<!--Sergio Gallegos Guerrero-->
+
+<header> <!--Todo lo que necesitamos meter en la cabecera y que necesite los buscadores se recomienda poner un h1-->
+        <h1 id="cabecera">Hoja de Inscripción en los ciclos formativos de grado superior</h1>
+</header>
+
+    <nav></nav> <!--! Parte de navegacion-->
+    <main> <!---->
+
+        <!--//todo Primer formulario-->
+
+        <form action="mailto:sergio_galle@hotmail.com?subject=Formulario de entrada" method="post"  enctype="text/plain">
+
+        <fieldset id="formulario_1">
+            <legend>Datos Personales</legend>
+
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" autocomplete id="nombre">
+            
+            <label for="Apellidos">Apellidos:</label>
+            <input type="text" name="Apellidos" id="Apellidos">
+
+            <label for="DNI">DNI</label>
+            <input required maxlength="9" value="77247380V" pattern="^[0-9]{8}[A-Za-z]$" title="Introduce tu dni, 8 números y seguido una letra " placeholder="XXXXXXXXH" type="text" name="DNI" id="DNI">
+
+            <label for="fechaNacimiento">Fecha de nacimiento</label>
+            <input type="date" name="fechaNacimiento" id="fechaNacimiento"> <br><br>
+
+            <label for="telefono">Telefono:</label>
+            <input type="text" required name="telefono" id="telefono" value="630600703"  pattern="\d{9}" title="Tienes que escribir 9 numeros seguidos, sin - ni ningun caracter especial" maxlength="9" placeholder="(+34)-650-67-89-08"> <!--//? Expresion regular para el telefono, uso requerido -->
+            
+            <label for="email">Email:</label>
+            <input required type="email" value="sergio_galle@hotmail.com" name="email" id="email">
+            <br><br>
+
+            <label for="localidad">Localidad:</label>
+            <input type="text" name="localidad" id="localidad">
+
+            <label for="provincias">Provincias:</label>
+            <select name="provincias" id="provincias">
+                <option selected disabled value=""></option>
+                <option value="Almeria">Almería</option>
+                <option value="Granada">Granada</option>
+                <option value="Jaen">Jaén</option>
+                <option value="Cordoba">Cordoba</option>
+                <option value="Sevilla">Sevilla</option>
+                <option value="Huelva">Huelva</option>
+                <option value="Cadiz">Cadíz</option>
+                <option value="Malaga">Málaga</option>
+            </select>
+
+            <label for="Paises">Pais de nacimiento:
+                <input  list="Paises"/>
+            </label>
+            <datalist id="Paises">
+                <option value="Afganistán">
+                <option value="Albania">
+                <option value="Alemania">
+                <option value="Andorra">
+                <option value="Angola">
+                <option value="Antigua y Barbuda">
+                <option value="Arabia Saudita">
+                <option value="Argelia">
+                <option value="Argentina">
+                <option value="Armenia">
+                <option value="Australia">
+                <option value="Austria">
+                <option value="Azerbaiyán">
+                <option value="Bahamas">
+                <option value="Bangladés">
+                <option value="Barbados">
+                <option value="Baréin">
+                <option value="Bélgica">
+                <option value="Belice">
+                <option value="Benín">
+                <option value="Bielorrusia">
+                <option value="Birmania">
+                <option value="Bolivia">
+                <option value="Bosnia y Herzegovina">
+                <option value="Botsuana">
+                <option value="Brasil">
+                <option value="Brunéi">
+                <option value="Bulgaria">
+                <option value="Burkina Faso">
+                <option value="Burundi">
+                <option value="Bután">
+                <option value="Cabo Verde">
+                <option value="Camboya">
+                <option value="Camerún">
+                <option value="Canadá">
+                <option value="Catar">
+                <option value="Chad">
+                <option value="Chile">
+                <option value="China">
+                <option value="Chipre">
+                <option value="Ciudad del Vaticano">
+                <option value="Colombia">
+                <option value="Comoras">
+                <option value="Corea del Norte">
+                <option value="Corea del Sur">
+                <option value="Costa de Marfil">
+                <option value="Costa Rica">
+                <option value="Croacia">
+                <option value="Cuba">
+                <option value="Dinamarca">
+                <option value="Dominica">
+                <option value="Ecuador">
+                <option value="Egipto">
+                <option value="El Salvador">
+                <option value="Emiratos Árabes Unidos">
+                <option value="Eritrea">
+                <option value="Eslovaquia">
+                <option value="Eslovenia">
+                <option value="España">
+                <option value="Estados Unidos">
+                <option value="Estonia">
+                <option value="Etiopía">
+                <option value="Filipinas">
+                <option value="Finlandia">
+                <option value="Fiyi">
+                <option value="Francia">
+                <option value="Gabón">
+                <option value="Gambia">
+                <option value="Georgia">
+                <option value="Ghana">
+                <option value="Granada">
+                <option value="Grecia">
+                <option value="Guatemala">
+                <option value="Guyana">
+                <option value="Guinea">
+                <option value="Guinea ecuatorial">
+                <option value="Guinea-Bisáu">
+                <option value="Haití">
+                <option value="Honduras">
+                <option value="Hungría">
+                <option value="India">
+                <option value="Indonesia">
+                <option value="Irak">
+                <option value="Irán">
+                <option value="Irlanda">
+                <option value="Islandia">
+                <option value="Islas Marshall">
+                <option value="Islas Salomón">
+                <option value="Israel">
+                <option value="Italia">
+                <option value="Jamaica">
+                <option value="Japón">
+                <option value="Jordania">
+                <option value="Kazajistán">
+                <option value="Kenia">
+                <option value="Kirguistán">
+                <option value="Kiribati">
+                <option value="Kuwait">
+                <option value="Laos">
+                <option value="Lesoto">
+                <option value="Letonia">
+                <option value="Líbano">
+                <option value="Liberia">
+                <option value="Libia">
+                <option value="Liechtenstein">
+                <option value="Lituania">
+                <option value="Luxemburgo">
+                <option value="Macedonia del Norte">
+                <option value="Madagascar">
+                <option value="Malasia">
+                <option value="Malaui">
+                <option value="Maldivas">
+                <option value="Malí">
+                <option value="Malta">
+                <option value="Marruecos">
+                <option value="Mauricio">
+                <option value="Mauritania">
+                <option value="México">
+                <option value="Micronesia">
+                <option value="Moldavia">
+                <option value="Mónaco">
+                <option value="Mongolia">
+                <option value="Montenegro">
+                <option value="Mozambique">
+                <option value="Namibia">
+                <option value="Nauru">
+                <option value="Nepal">
+                <option value="Nicaragua">
+                <option value="Níger">
+                <option value="Nigeria">
+                <option value="Noruega">
+                <option value="Nueva Zelanda">
+                <option value="Omán">
+                <option value="Países Bajos">
+                <option value="Pakistán">
+                <option value="Palaos">
+                <option value="Panamá">
+                <option value="Papúa Nueva Guinea">
+                <option value="Paraguay">
+                <option value="Perú">
+                <option value="Polonia">
+                <option value="Portugal">
+                <option value="Reino Unido">
+                <option value="República Centroafricana">
+                <option value="República Checa">
+                <option value="República del Congo">
+                <option value="República Democrática del Congo">
+                <option value="República Dominicana">
+                <option value="Ruanda">
+                <option value="Rumanía">
+                <option value="Rusia">
+                <option value="Samoa">
+                <option value="San Cristóbal y Nieves">
+                <option value="San Marino">
+                <option value="San Vicente y las Granadinas">
+                <option value="Santa Lucía">
+                <option value="Santo Tomé y Príncipe">
+                <option value="Senegal">
+                <option value="Serbia">
+                <option value="Seychelles">
+                <option value="Sierra Leona">
+                <option value="Singapur">
+                <option value="Siria">
+                <option value="Somalia">
+                <option value="Sri Lanka">
+                <option value="Suazilandia">
+                <option value="Sudáfrica">
+                <option value="Sudán">
+                <option value="Sudán del Sur">
+                <option value="Suecia">
+                <option value="Suiza">
+                <option value="Surinam">
+                <option value="Tailandia">
+                <option value="Taiwán">
+                <option value="Tanzania">
+                <option value="Tayikistán">
+                <option value="Timor Oriental">
+                <option value="Togo">
+                <option value="Tonga">
+                <option value="Trinidad y Tobago">
+                <option value="Túnez">
+                <option value="Turkmenistán">
+                <option value="Turquía">
+                <option value="Tuvalu">
+                <option value="Ucrania">
+                <option value="Uganda">
+                <option value="Uruguay">
+                <option value="Uzbekistán">
+                <option value="Vanuatu">
+                <option value="Venezuela">
+                <option value="Vietnam">
+                <option value="Yemen">
+                <option value="Yibuti">
+                <option value="Zambia">
+                <option value="Zimbabue">
+            </datalist>
+            
+
+            
+            <label for="direccion">Direccion:</label>
+            <input type="text" name="direccion" id="direccion">
+
+            <label for="codigo_postal">Código Postal</label>
+            <input type="text" name="codigo_postal" id="codigo_postal">
+
+        </fieldset>
+
+
+        <fieldset id="formulario_2">
+            <legend>Formas de Acceso</legend>
+
+            
+            <input type="radio" value="Seleccionado" name="Forma de Acceso Directo" id="Directo">
+            <label for="Directo">Directo
+            <div id="opcionesDirecto">
+                <input type="radio" name="grupoDirecto"  value="Opcion seleccionada Bachillerato o equivalente a efectos academicos" id="opc1" onclick="document.getElementById('Directo').checked = true;">
+                <label for="opc1" >Bachillerato o equivalente a efectos académicos</label>
+                <br>
+                <input type="radio" name="grupoDirecto" value=" Opcion seleccionada Técino de FP (CFGM) " id="opc2" onclick="document.getElementById('Directo').checked = true;">
+                <label for="opc2">Técino de FP (CFGM)</label>
+                <br>
+                <input type="radio" name="grupoDirecto" value="Opcion seleccionada Técnico Superior de FP (CFGS) o equivalente a efectos academicos "  id="opc3">
+                <label for="">Técnico Superior de FP (CFGS) o equivalente a efectos academicos. Especifique Denominación de la Titulación <input type="text" name="Input Técnico Superior de FP (CFGS) o equivalente a efectos academicos " class="opc3" id="opc3" onclick="document.getElementById('Directo').checked = true;"></label>
+                <br>
+                <input type="radio" name="grupoDirecto" value="Titulo_universitario"  id="opc4" onclick="document.getElementById('Directo').checked = true;">
+                <label for="opc4">Titulación universitaria oficial. Especifique De la Titulación <input type="text" name="Input Titulación universitaria oficial" class="opc4" id="opc4" onclick="document.getElementById('Directo').checked = true;" ></label> 
+                <br>
+                <input type="radio"  name="grupoDirecto" id="opc5" onclick="document.getElementById('Directo').checked = true;">
+                <label for="opc5">Otros: (especifique) <input type="text" name="Input otras titulaciones " class="opc5" id="opc5"></label>
+            </div>
+
+            <input type="radio" name="Forma de acceso Prueba libre" value="Seleccionada"  id="prueba_Libre">
+            <label for="prueba_Libre">Prueba libre</label>
+            <div id="prueba_libre">
+            <input type="radio" name="opcion prueba Libre" value="Prueba de acceso" id="pb" onclick="document.getElementById('prueba_Libre').checked=true;">
+            <label for="pb">Prueba de acceso </label>
+        <br>
+            <input type="radio" name="opcion prueba Libre" value="Prueba de acceso a los ciclos formativos de grado superior" id="pb1" onclick="document.getElementById('prueba_Libre').checked=true;">
+            <label for="pb1">Prueba de acceso a los ciclos formativos de grado superior</label>
+            <br>
+            <input type="radio" name="opcion prueba Libre" value="Prueba de acceso a la universidad para mayores" id="pb2" onclick="document.getElementById('prueba_Libre').checked=true;">
+            <label for="pb2">Prueba de acceso a la universidad para mayores</label>
+        </div>
+        </fieldset>
+
+
+
+        <fieldset id="formulario_3">
+
+            <legend>Documentos Adjuntados</legend>
+
+            <input type="checkbox" name="Fotocopia del DNI" value="Seleccionado" id="op1">
+            <label for="op1">Fotocopia DNI. Selecciones un fichero: <input type="file" name="Archivo fotocopia del dni" id=""></label>
+<br>
+            <input type="checkbox" name="Certificado Academico" value="Seleccionado" id="op2">
+            <label for="op2">Certificado Académico. Selecciones un fichero <input type="file" name="Archivo Certificado Academico" id="op2"></label>
+
+            <br>
+
+            <input type="checkbox" name="Otros documentos" value="Seleccionado" id="op3">
+            <label for="op3">Otros documentos (especifique) . Seleciones un fchero <input type="file"  name="Otros documentos"  id=""></label>
+
+            
+
+        </fieldset>
+        
+        <div id="Firma">
+
+            <label for="firma">Firma:</label>
+            <input type="text" size="40" name="Firmado por:" id="firma">
+            <input type="date" name="En la fecha" id="firma">
+            
+        </div>
+    
+
+        <button id="btnEnviar" type="submit"><img src="form.png" width="20%" alt=""><span>Enviar</span></button>
+
+        </form>
+
+       
+    </main>
+
+    <footer>
+        <address>
+            <p>Sergio Gallegos Guerrero</p>
+            <p>2ºDAW - DIW</p>
+            <p>Nombre de la practica</p>
+            <p></p>
+        </address>
+    </footer> <!--Poner copyright etc, es nuestro caso poner nuestro datos-->
+
+    <br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
