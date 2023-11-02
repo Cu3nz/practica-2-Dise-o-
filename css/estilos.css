@@ -65,24 +65,16 @@ select{
     margin-top: 15px;
 }
 
-#btnEnviar{
-    margin-top: 10px;
-    border-radius: 10px;
-    height: 35px;
-    width: 120px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+button{
+    margin-top: 20px;
 }
 
 #btnEnviar:hover{
     background-color: green;
     transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
-#btnEnviar span{
-position: relative;
-top: -6px;
-}
 
 
 

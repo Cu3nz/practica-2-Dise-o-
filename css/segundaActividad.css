@@ -1,0 +1,106 @@
+body{
+    font-size: 20px;
+
+}
+
+header {
+    background-color: #000;
+    width: auto;
+    height: auto;
+    display: flex; /*Alinear de forma horizontal a los hijos*/
+    flex-direction: column; /* Cambiar la dirección a columna */
+    align-items: center; /*Para que el texto este centrado*/
+    margin-bottom: 5px;
+}
+
+
+nav {
+    margin-left: 10px; /* Espacio entre la imagen y el texto */
+}
+
+header nav a{
+    color: #AAA;
+    margin: 2px;
+    padding: 0; /* Establece el padding a 0 para que las lineas esten pegadas al texto*/
+    
+}
+
+header nav a.activo{ /*Para la clase activo*/
+    color: #fff;
+}
+
+a{
+    text-decoration: none; /*Quitar el subrayado de los enlaces*/
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+header nav a:hover{
+    color: red;
+    transition: .6s ease all;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    padding: 7px 0px; /*Para que las lineas esten separadas y haga un efecto de movimiento*/
+}
+
+
+
+audio {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    border: 3px solid #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+
+video{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+address{
+    text-align: center;
+}
+
+#fechaActual{
+    font-family: 'Roboto', sans-serif;
+}
+
+.redes{
+    width: 2em;
+    margin-left: 20px;
+}
+
+
+.centrar-figure{
+    display: flex;
+    flex-direction: column; /* Apila los elementos en dirección vertical */
+    align-items: center;    /* Centra los elementos horizontalmente */
+    justify-content: center;/* Si deseas centrar también verticalmente */
+    width: 100%;            /* Ocupa todo el ancho disponible */
+    text-align: center;     /* Asegura que el texto del caption también esté centrado */ 
+}
+
+.centrar-figure img{
+    max-width: 20%;        /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto;  
+}
+
+section h3 ,h2{
+text-align: center;
+margin-bottom: 0.em;
+}
+
+strong{
+    color: #FFFF00;
+}
+
+
+
+
+

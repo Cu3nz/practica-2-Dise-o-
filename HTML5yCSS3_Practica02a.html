@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="img/png" href="https://www.iesalandalus.org/planDeCentro/ProyectoEducativo/logo-ies2.png" />
-    <meta name="keywords" content="Modificar,palabras,clave"> <!--//!Palabras clave-->
-    <meta name="Description" content="Pagina web con la informacion de las paginas oficiales de valorant">
+    <meta name="keywords" content="Ciclos formativos, universidad, FP, Andalucia, CFGM , CFGS "> <!--//!Palabras clave-->
+    <meta name="Description" content="Formulario de inscripción para ciclos formativos de grado superior.">
     <meta name="Author" content="Sergio Gallegos Guerrero">
     <title>HTML5yCSS3_Practica01a.html Sergio Gallegos Guerrero</title>
     <link rel="stylesheet" href="css/estilos.css">
@@ -24,33 +24,33 @@
 
         <!--//todo Primer formulario-->
 
-        <form action="mailto:sergio_galle@hotmail.com?subject=Formulario de entrada" method="post"  enctype="text/plain">
+        <form action="mailto:sergio_galle@hotmail.com?subject=Hoja de inscripcion en los ciclos formativos de grado Superior" method="post" accept-charset="UTF-8"  enctype="text/plain">
 
         <fieldset id="formulario_1">
             <legend>Datos Personales</legend>
 
 
             <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" autocomplete id="nombre">
+            <input type="text" name="nombre" autocomplete id="nombre" autocomplete="on" >
             
             <label for="Apellidos">Apellidos:</label>
-            <input type="text" name="Apellidos" id="Apellidos">
+            <input type="text" name="Apellidos" id="Apellidos" autocomplete="on">
 
             <label for="DNI">DNI</label>
-            <input required maxlength="9" value="77247380V" pattern="^[0-9]{8}[A-Za-z]$" title="Introduce tu dni, 8 números y seguido una letra " placeholder="XXXXXXXXH" type="text" name="DNI" id="DNI">
+            <input required maxlength="9"  pattern="^[0-9]{8}[A-Za-z]$" title="Introduce tu dni, 8 números y seguido una letra " placeholder="XXXXXXXXH" type="text" name="DNI" id="DNI" autocomplete="on">
 
             <label for="fechaNacimiento">Fecha de nacimiento</label>
             <input type="date" name="fechaNacimiento" id="fechaNacimiento"> <br><br>
 
             <label for="telefono">Telefono:</label>
-            <input type="text" required name="telefono" id="telefono" value="630600703"  pattern="\d{9}" title="Tienes que escribir 9 numeros seguidos, sin - ni ningun caracter especial" maxlength="9" placeholder="(+34)-650-67-89-08"> <!--//? Expresion regular para el telefono, uso requerido -->
+            <input type="text" required name="telefono" id="telefono"  pattern="\d{9}" title="Tienes que escribir 9 numeros seguidos, sin - ni ningun caracter especial" maxlength="9" placeholder="(+34)-650-67-89-08" autocomplete="on"> <!--//? Expresion regular para el telefono, uso requerido -->
             
             <label for="email">Email:</label>
-            <input required type="email" value="sergio_galle@hotmail.com" name="email" id="email">
+            <input required type="email" name="email" id="email" autocomplete="on">
             <br><br>
 
             <label for="localidad">Localidad:</label>
-            <input type="text" name="localidad" id="localidad">
+            <input type="text" name="localidad" id="localidad" autocomplete="on">
 
             <label for="provincias">Provincias:</label>
             <select name="provincias" id="provincias">
@@ -66,7 +66,7 @@
             </select>
 
             <label for="Paises">Pais de nacimiento:
-                <input  list="Paises"/>
+                <input name="Pais de nacimiento:" autocomplete="on"  list="Paises"/>
             </label>
             <datalist id="Paises">
                 <option value="Afganistán">
@@ -273,7 +273,14 @@
 
             <label for="codigo_postal">Código Postal</label>
             <input type="text" name="codigo_postal" id="codigo_postal">
-
+<br><br>
+            <label for="sexo">Sexo:</label>
+            <select name="sexo" id="sexo">
+            <option selected disabled value="-1">Seleciona tu sexo</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            </select>
+            
         </fieldset>
 
 
@@ -290,8 +297,8 @@
                 <input type="radio" name="grupoDirecto" value=" Opcion seleccionada Técino de FP (CFGM) " id="opc2" onclick="document.getElementById('Directo').checked = true;">
                 <label for="opc2">Técino de FP (CFGM)</label>
                 <br>
-                <input type="radio" name="grupoDirecto" value="Opcion seleccionada Técnico Superior de FP (CFGS) o equivalente a efectos academicos "  id="opc3">
-                <label for="">Técnico Superior de FP (CFGS) o equivalente a efectos academicos. Especifique Denominación de la Titulación <input type="text" name="Input Técnico Superior de FP (CFGS) o equivalente a efectos academicos " class="opc3" id="opc3" onclick="document.getElementById('Directo').checked = true;"></label>
+                <input  type="radio" onclick="document.getElementById('Directo').checked = true;" name="grupoDirecto" value="Opcion seleccionada Técnico Superior de FP (CFGS) o equivalente a efectos academicos "  id="opc3">
+                <label for="">Técnico Superior de FP (CFGS) o equivalente a efectos academicos. Especifique Denominación de la Titulación</label><input type="text" name="Input Técnico Superior de FP (CFGS) o equivalente a efectos academicos " class="opc3" id="opc3">
                 <br>
                 <input type="radio" name="grupoDirecto" value="Titulo_universitario"  id="opc4" onclick="document.getElementById('Directo').checked = true;">
                 <label for="opc4">Titulación universitaria oficial. Especifique De la Titulación <input type="text" name="Input Titulación universitaria oficial" class="opc4" id="opc4" onclick="document.getElementById('Directo').checked = true;" ></label> 
@@ -338,13 +345,14 @@
         <div id="Firma">
 
             <label for="firma">Firma:</label>
-            <input type="text" size="40" name="Firmado por:" id="firma">
+            <input type="text" size="40" name="Firmado por:" id="firma" autocomplete="on">
             <input type="date" name="En la fecha" id="firma">
             
         </div>
     
 
-        <button id="btnEnviar" type="submit"><img src="form.png" width="20%" alt=""><span>Enviar</span></button>
+        <button><img id="btnEnviar" src="img/form.png" alt=""></button>
+        
 
         </form>
 
@@ -356,7 +364,7 @@
             <p>Sergio Gallegos Guerrero</p>
             <p>2ºDAW - DIW</p>
             <p>Nombre de la practica</p>
-            <p></p>
+            <p>HTML5yCSS3_Practica02a.html</p>
         </address>
     </footer> <!--Poner copyright etc, es nuestro caso poner nuestro datos-->
 
